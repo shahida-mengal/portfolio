@@ -1,0 +1,415 @@
+<!Doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+
+<title>css 31</title>
+
+<script src="https://kit.fontawesome.com/742b658e13.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+<style>
+
+/*#ul
+{
+list-style:none;
+margin:0px;
+padding:0px;
+background-color:#CC0033;
+}
+#l1
+{
+float:left;
+}
+a#new:link
+{
+color:yellow;
+display:block;
+width:150px;
+height:45px;
+font-size:20px;
+text-decoration:none;
+line-height:40px;
+text-align:center;
+margin-left:9px;
+border:4px double red;
+border:dotted #CC0000 ;
+border-radius:30px 10px 30px 10px;
+background-color:black;
+background:-webkit-linear-gradient(190deg,blue,white,gray,black);
+/*for safari 5.1 to6.0 */
+
+background:-o-linear-gradient(190deg,blue,white);
+/*fro opera 11.1 to 12.0 */
+
+background:-moz-linear-gradient(190deg,blue,white);
+/*for firefox 3.6 to 15 */
+
+background:linear-gradient
+(190deg,blue,white);
+/*standerd syntax */
+}/*
+
+a#new:hover
+{
+background-color:#00CC66;
+font-weight:bold;
+color:#993333;
+text-decoration:underline;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:990px;
+display:block;}
+
+a#new:visited
+{
+background-color:skyblue;
+font-weight:bold;
+color:black;
+display:block;
+width:150px;
+height:40px;
+
+background:-webkit-linear-gradient(190deg,green,red,white);
+/*for safari 5.1 to6.0 */
+
+background:-o-linear-gradient(190deg,green,red,white);
+/*fro opera 11.1 to 12.0 */
+
+background:-moz-linear-gradient(190deg,green,red,white);
+/*for firefox 3.6 to 15 */
+
+background:linear-gradient
+(190deg,green,red,white);
+/*standerd syntax */
+}/*
+body
+{
+margin:0px;
+paiding:0px;
+}
+#maindiv
+{
+
+width:990px;
+height:250px;
+border:1px solid black;
+background-image: linear-gradient(to right,rgb(113, 214, 221),rgb(60, 157, 247));
+
+position:relative;
+margin-left:auto;
+margin-right:auto;
+
+}*/
+
+
+
+
+*{
+    padding:10px;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 17px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: 5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right:40px;
+    cursor: pointer;
+    display: none;
+    cursor: pointer;
+   
+}
+#check{
+    display: none;
+
+}
+
+@media(max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+    div ul li a{
+        font-size: 16px;
+
+    }
+}
+ 
+
+@media (max-width:858px){
+    .checkbtn{
+       display: block;
+    }
+    ul{
+       position: fixed;
+       width: 50%;
+       height: 50vh;
+       background: #2c3e50;
+       top: 100px;
+       right: 40px;
+       text-align: center;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+   nav ul li a{
+        font-size: 20px;
+
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ul{
+        left:0 ;
+    }
+}
+
+
+#Banner
+{
+
+width:990px;
+height:250px;
+border:1px solid black;
+background-color:green;
+text-align:center;
+line-height:250px;
+position:absolute;
+
+background:-webkit-linear-gradient(190deg,brown,yellow);
+/*for safari 5.1 to6.0 */
+
+background:-o-linear-greadent(190deg,brown,yellow);
+/*fro opera 11.1 to 12.0 */
+
+background:-moz-linear-gradient(190deg,brown,yellow);
+/*for firefox 3.6 to 15 */
+
+background:linear-gradient
+(190deg,brown,yellow);
+/*standerd syntax */
+}
+@media (max-width: 700px){
+    .banner{
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px){
+    .banner{
+        width: 100%;
+    }
+}
+
+#slider
+{
+width:990px;
+height:400px;
+border:1px solid black;
+background-color:#999999;
+position:absolute;
+margin-top:12px;
+text-align:center;
+line-height:400px;
+}
+
+#content
+{
+width:990px;
+height:600px;
+border:1px solid black;
+
+background-image: linear-gradient(to top,rgb(22, 22, 95),rgb(169, 169, 221));
+position:absolute;
+margin-top:500px;
+text-align:center;
+line-height:26px;
+
+}
+
+@media (min-width: 800px){
+  p{
+        font-size: 1.2rem;
+
+    }
+
+}
+@media (min-width: 600px){
+    p{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+}
+.btn{
+   align-items: flex-start;
+}
+#footer
+{
+width:990px;
+height:200px;
+border:1px solid black;
+background-color:black;
+position:absolute;
+margin-top:950px;
+text-align:center;
+line-height:200px;
+
+
+}
+.port{
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    
+}
+
+
+
+</style>
+</head>
+ <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    
+    
+    <!-- Insert to your webpage before the </head> -->
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <script src="sliderengine/initslider-1.js"></script>
+    <!-- End of head section HTML codes -->
+    
+
+<body>
+<div id="maindiv">
+    
+    <div id="banner"><font size="7"><img src="https://www.dgtech.com/wp-content/uploads/2016/03/portfolio-banner.jpg"width="990" height="250"></font></div>	
+  
+     
+   
+    
+
+   
+
+
+		
+		
+
+    <nav>
+            
+        <input type="checkbox" id="check" >
+<label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+
+</label>
+<label class="logo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJum2co_G9RmYQ8VOc_cs3uceikj4DqajKFQ&usqp=CAU" width="100px" height="80px">
+</label>
+
+  
+
+<ul>
+<li><a class="active" href="index.html" id="new">Home</a></li>
+
+<li><a href="gallary.html" id="new">Gallary</a></li>
+
+<li><a href="aboutus.html" id="new">About us</a></li>
+
+<li><a href="contectus.html" id="new">Contect us</a></li>
+
+</ul>
+    </nav>
+<div id="slider">
+
+<div style="margin:30px auto;max-width:990px;">
+    
+     <!-- Insert to your webpage where you want to display the slider -->
+     <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:990px;margin:0px auto 56px;">
+        <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="slider/slid.jpg" alt="slid"  title="slid" />
+                </li>
+                
+                <li><img src="slider/pics.jpg" alt="pics"  title="pics" />
+                </li>
+                <li><img src="slider/images%20%282%29.jpg" alt="images (2)"  title="images (2)" />
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="slider/slid-tn.jpg" alt="slid" title="slid" />
+                   <div>sty;e</div>
+                
+                </li>
+                
+                <li><img src="slider/pics-tn.jpg" alt="pics" title="pics" /></li>
+                <li><img src="slider/images%20%282%29-tn.jpg" alt="images (2)" title="images (2)" /></li>
+            </ul>
+        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Image Slider jQuery">Image Slider jQuery</a></div>
+        </div>
+    </div>
+    <!-- End of body section HTML codes -->
+</div>
+
+</div>
+<div id="content"><p align="justify">
+<img src="images/pic.jpg" width="200" height="150" align="left">
+
+<h2><U><b>Shahida Mengal's Portfolio!!!</b></U></h2>
+<p>My name is Shahida Dost Muhammad. I am a web developer before web development I used to work so that I could meet my needs myself so I joined the teaching field.I am very hard to complete all my work with responsibility and do not give anyone a chance to complain if I need help anywhere, I support the Internet and I do a lot of explore from the Internet so that I can inform my knowledge and become like professional people.
+
+    Despite a lifetime of often falling short of my own true potential, I’ve always held on to a quote by the writer James Baldwin: <strong>“The world is before you, and you need not take it or leave it as it was when you came in.”</strong> </p>
+
+</td>
+
+</div>
+<div id="footer"><font size="7"><img src="images/piicss.jpg"width="990" height="200"></font></div>
+</div>
+
+</body>
+</html>

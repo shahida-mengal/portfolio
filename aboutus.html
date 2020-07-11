@@ -1,0 +1,617 @@
+<!Doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+
+<title>css 31</title>
+
+<script src="https://kit.fontawesome.com/742b658e13.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+<style>
+    /*
+
+#ul
+{
+list-style:none;
+margin:0px;
+padding:0px;
+background-color:#CC0033;
+}
+#l1
+{
+float:left;
+}
+a#new:link
+{
+color:yellow;
+display:block;
+width:150px;
+height:45px;
+font-size:20px;
+text-decoration:none;
+line-height:40px;
+text-align:center;
+margin-left:9px;
+border:4px double red;
+border:dotted #CC0000 ;
+border-radius:30px 10px 30px 10px;
+background-color:black;
+background:-webkit-linear-gradient(190deg,blue,white,gray,black);
+/*for safari 5.1 to6.0 */
+
+background:-o-linear-gradient(190deg,blue,white);
+/*fro opera 11.1 to 12.0 */
+
+background:-moz-linear-gradient(190deg,blue,white);
+/*for firefox 3.6 to 15 */
+
+background:linear-gradient
+(190deg,blue,white);
+/*standerd syntax */
+
+a#new:hover
+{
+background-color:#00CC66;
+font-weight:bold;
+color:#993333;
+text-decoration:underline;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:990px;
+display:block;}
+
+a#new:visited
+{
+
+font-weight:bold;
+color:black;
+display:block;
+width:150px;
+height:40px;
+
+background:-webkit-linear-gradient(190deg,green,red,white);
+/*for safari 5.1 to6.0 */
+
+background:-o-linear-gradient(190deg,green,red,white);
+/*fro opera 11.1 to 12.0 */
+
+background:-moz-linear-gradient(190deg,green,red,white);
+/*for firefox 3.6 to 15 */
+
+background:linear-gradient
+(190deg,green,red,white);
+/*standerd syntax */
+}
+
+body
+{
+margin:0px;
+padding:0px;
+}
+#maindiv
+{
+
+width:990px;
+height:1500px;
+border:1px solid black;
+
+position:relative;
+margin-left:auto;
+margin-right:auto;
+
+}
+*/
+
+
+
+
+
+*{
+    padding:10px;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 17px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: 5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right:40px;
+    cursor: pointer;
+    display: none;
+    cursor: pointer;
+   
+}
+#check{
+    display: none;
+
+}
+
+@media(max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+    div ul li a{
+        font-size: 16px;
+
+    }
+}
+ 
+
+@media (max-width:858px){
+    .checkbtn{
+       display: block;
+    }
+    ul{
+       position: fixed;
+       width: 50%;
+       height: 50vh;
+       background: #2c3e50;
+       top: 100px;
+       right: 40px;
+       text-align: center;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+   nav ul li a{
+        font-size: 20px;
+
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ul{
+        left:0 ;
+    }
+}
+
+#Banner
+
+{
+
+width:990px;
+height:250px;
+border:1px solid black;
+background-color:green;
+text-align:center;
+line-height:250px;
+position:absolute;
+
+background:-webkit-linear-gradient(190deg,brown,yellow);
+/*for safari 5.1 to6.0 */
+
+background:-o-linear-greadent(190deg,brown,yellow);
+/*fro opera 11.1 to 12.0 */
+
+background:-moz-linear-gradient(190deg,brown,yellow);
+/*for firefox 3.6 to 15 */
+
+background:linear-gradient
+(190deg,brown,yellow);
+/*standerd syntax */
+}
+
+#slider
+{
+width:990px;
+height:400px;
+
+background-color:#999999;
+position:absolute;
+margin-top:12px;
+text-align:center;
+line-height:400px;
+}
+
+#content
+{
+width:990px;
+height:790px;
+border:1px solid black;
+
+position:absolute;
+margin-top:490px;
+text-align:center;
+line-height:600px;
+
+}
+#footer
+{
+width:983px;
+height:200px;
+border:1px solid black;
+background-color:#FF9999;
+position:absolute;
+margin-top:670px;
+text-align:center;
+line-height:200px;
+
+}
+
+@media  (max-width: 700px) {
+    .footer{
+       
+width: 50%;
+height: 50%;
+        
+    }
+        
+    
+    
+}
+
+
+@media (max-width: 500px) {
+    .footer{
+       
+width: 100%;
+        
+    }
+        
+    
+    
+}
+#leftside
+{
+width:200px;
+height:670px;
+border:1px solid black;
+background-color:brown;
+position:absolute;
+margin-top:px;
+text-align:center;
+line-height:700px;
+
+}
+.rightside
+{
+width:790px;
+height: 670px;
+border:1px solid black;
+background-image: linear-gradient(to top,rgb(22, 22, 95),rgb(169, 169, 221));
+position:absolute;
+margin-left:200px;
+text-align:center;
+line-height:20px;
+
+
+
+}
+
+#maincontainer{
+    
+    display: grid;
+    text-shadow: darkmagenta;
+}
+/*
+
+.pic1
+{
+width:260px;
+heigth:190px;
+border:1px solid black;
+background-color:gray;
+position:absolute;
+margin-left:2px;
+text-align:center;
+line-height:200px;
+}
+.pic2
+{
+width:260px;
+heigth:190px;
+border:1px solid black;
+background-color:yellow;
+position:absolute;
+margin-left:266px;
+text-align:center;
+line-height:200px;
+}
+
+.pic3
+{
+width:260px;
+heigth:190px;
+border:1px solid black;
+background-color:white;
+position:absolute;
+margin-left:527px;
+text-align:center;
+line-height:200px;
+
+}
+.pic4
+{
+width:260px;
+heigth:190px;
+border:1px solid black;
+background-color:gray;
+position:absolute;
+margin-top:195px;
+margin-left:2px;
+text-align:center;
+line-height:200px;
+}
+.pic5
+{
+width:260px;
+heigth:190px;
+border:1px solid black;
+background-color:yellow;
+position:absolute;
+margin-top:195px;
+margin-left:266px;
+text-align:center;
+line-height:200px;
+
+}
+
+.pic6
+{
+width:260px;
+heigth:190px;
+border:1px solid black;
+background-color:white;
+position:absolute;
+margin-top:195px;
+margin-left:527px;
+text-align:center;
+line-height:200px;
+}
+.pic7
+{
+width:260px;
+heigth:190px;
+border:1px solid black;
+background-color:gray;
+position:absolute;
+margin-top:390px;
+margin-left:2px;
+text-align:center;
+line-height:200px;
+
+}
+.pic8
+{
+width:260px;
+heigth:190px;
+border:1px solid black;
+background-color:yellow;
+position:absolute;
+margin-top:390px;
+margin-left:266px;
+text-align:center;
+line-height:200px;
+
+}
+.pic9
+{
+width:260px;
+heigth:190px;
+border:1px solid black;
+background-color:white;
+position:absolute;
+margin-top:390px;
+margin-left:527px;
+text-align:center;
+line-height:200px;
+}   */
+.cont{
+    display: inline-block;
+    border: 2px solid black;
+    width: 200px;
+    height: 400px;
+    border-radius: 30px;
+}
+@media  (max-width: 700px) {
+    .cont{
+       
+width: 10%;
+height: 5%;
+        
+    }
+        
+    
+    
+}
+
+
+@media (max-width: 500px) {
+    .cont{
+       
+width: 50%;
+        
+    }
+        
+    
+    
+}
+
+</style>
+</head>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    
+    
+    <!-- Insert to your webpage before the </head> -->
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <script src="sliderengine/initslider-1.js"></script>
+    <!-- End of head section HTML codes -->
+    
+    <body>
+<div id="maindiv">
+
+    <div id="banner"><font size="7"><img src="https://www.dgtech.com/wp-content/uploads/2016/03/portfolio-banner.jpg"width="990" height="250"></font></div>		
+		
+
+
+    <nav>
+            
+        <input type="checkbox" id="check" >
+<label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+
+</label>
+<label class="logo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJum2co_G9RmYQ8VOc_cs3uceikj4DqajKFQ&usqp=CAU" width="100px" height="80px">
+</label>
+
+  
+
+<ul>
+<li><a class="active" href="index.html" id="new">Home</a></li>
+
+<li><a href="gallary.html" id="new">Gallary</a></li>
+
+<li><a href="aboutus.html" id="new">About us</a></li>
+
+<li><a href="contectus.html" id="new">Contect us</a></li>
+
+</ul>
+    </nav>
+   
+   
+   
+
+   
+
+
+
+
+
+<div id="slider">
+
+<div style="margin:30px auto;max-width:990px;">
+    
+    <!-- Insert to your webpage where you want to display the slider -->
+    <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:990px;margin:0px auto 56px;">
+        <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="slider/slid.jpg" alt="slid"  title="slid" />
+                </li>
+                
+                <li><img src="slider/pics.jpg" alt="pics"  title="pics" />
+                </li>
+                <li><img src="slider/images%20%282%29.jpg" alt="images (2)"  title="images (2)" />
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="slider/slid-tn.jpg" alt="slid" title="slid" />
+                   <div>sty;e</div>
+                
+                </li>
+                
+                <li><img src="slider/pics-tn.jpg" alt="pics" title="pics" /></li>
+                <li><img src="slider/images%20%282%29-tn.jpg" alt="images (2)" title="images (2)" /></li>
+            </ul>
+        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Image Slider jQuery">Image Slider jQuery</a></div>
+        </div>
+    </div>
+    <!-- End of body section HTML codes -->
+    
+</div>
+</div>
+
+
+	<div id="content">
+
+<div id="leftside"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7946998292596!2d67.13554655004579!3d25.00709108390633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb346feccba7cbf%3A0xc595c16e500e9d5!2sThe%20Citizens%20Foundation%20School!5e0!3m2!1sen!2s!4v1594187987067!5m2!1sen!2s" width="200" height="730" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+	
+
+	<div class="rightside">
+        <h1><u>About Me</u></h1>
+        <p>My name is Shahida Dost Muhammad. I am a web developer before web development I used to work so that I could meet my needs myself so I joined the teaching field.I am very hard to complete all my work with responsibility and do not give anyone a chance to complain if I need help anywhere, I support the Internet and I do a lot of explore from the Internet so that I can inform my knowledge and become like professional people.
+
+            Despite a lifetime of often falling short of my own true potential, I’ve always held on to a quote by the writer James Baldwin: “The world is before you, and you need not take it or leave it as it was when you came in.” </p>
+        <h1><u>My Experiences!!!</u></h1>
+        
+            <div class="cont">
+            <img src="https://static.wixstatic.com/media/dc4e86_eef9e2ece2184978bf281400197e56bc~mv2.jpg/v1/fill/w_200,h_200,al_c,lg_1,q_80/download%20(1).webp" width="100" height="90">
+
+            <h2>Teaching</h2>
+            <h3>2016</h3>
+           
+            <p>
+                I am a teacher and I started teaching since 2016 because I am very fond of taking education and delivering education to others, so I took this decent profession.
+        </p>
+        </div>
+        <div class="cont">
+            <img src="https://static.wixstatic.com/media/dc4e86_32cf78b614154975a6adf727d43b94bd~mv2.jpg/v1/fill/w_200,h_200,al_c,q_80,usm_0.66_1.00_0.01/images%20(3).webp"  width="100" height="90">
+            <h2>MS Office</h2>
+            <h3>2019</h3>   
+            
+            <p>
+            I was also interested in coming into the world of technology, so to get this hobby, I also joined the Microsoft office and completed the course.
+        </p>
+        </div>
+        <div class="cont"> 
+            <img src="https://static.wixstatic.com/media/dc4e86_059ae95dbaf746f1b7b8935578222076~mv2.jpg/v1/fill/w_200,h_200,al_c,q_80,usm_0.66_1.00_0.01/photo-1515253564590-b7ec416b06be.webp"  width="100" height="90">
+            <h2>Web Desigining</h2>
+            <h3>2020</h3>
+                     
+           
+            <p>
+            After the ms office I also had to do web development, so I joined tech Karo and now I am learning coding so that I can become a good web developer.
+            
+        
+        
+        </p>
+        </div>
+    </div>
+
+
+<div id="footer"><font size="7"><img src="images/piicss.jpg"width="990" height="200"></font></div>
+</div>
+</body>
+</html>
